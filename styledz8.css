@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 1200px;
   margin: 0 auto;
 }
@@ -34,6 +35,7 @@
   font-family: Montserrat;
   font-weight: bold;
   color: #333333;
+  text-transform: uppercase;
 }
 .red {
   background-color: #f38181;
@@ -54,6 +56,10 @@
 .people {
   display: inline-block;
   margin-right: 30px;
+  margin-top: 27px;
+}
+.people:last-child {
+  margin: 0;
 }
 .point {
   font-family: Montserrat;
@@ -66,4 +72,64 @@
   font-style: italic;
   font-size: 15px;
   color: #b6b6b6;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-top: 10px;
+  border-top: 1px solid #b6b6b6;
+}
+.text-foot {
+  font-size: 14px;
+  color: #333333;
+}
+.email {
+  width: 230px;
+  height: 39px;
+  border: 1px solid #b6b6b6;
+}
+::placeholder {
+  font-family: Roboto;
+}
+.sub {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #95e1d3;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1168px;
+  margin: 0 auto;
+}
+.ser {
+  flex-basis: calc((100% - 0px) / 3);
+  align-items: flex-start;
+  height: 74px;
+  margin-top: 65px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.text-block {
+  font-family: Roboto;
+  font-size: 15px;
+  color: #b6b6b6;
+}
+.colum {
+  display: inline-block;
 }
