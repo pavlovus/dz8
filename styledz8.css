@@ -24,7 +24,7 @@
 }
 .center {
   text-align: center;
-  margin-top: 81px;
+  margin-top: 100px;
 }
 .who {
   font-family: Kaushan Script;
@@ -57,6 +57,7 @@
   display: inline-block;
   margin-right: 30px;
   margin-top: 27px;
+  position: relative;
 }
 .people:last-child {
   margin: 0;
@@ -86,13 +87,16 @@
 .text-foot {
   font-size: 14px;
   color: #333333;
+  font-family: Montserrat;
 }
 .email {
   width: 230px;
   height: 39px;
   border: 1px solid #b6b6b6;
+  padding-left: 10px;
+  font-family: Roboto;
 }
-::placeholder {
+.email::placeholder {
   font-family: Roboto;
 }
 .sub {
@@ -105,18 +109,33 @@
   font-family: Montserrat;
   text-transform: uppercase;
 }
+.sub:hover {
+  color: royalblue;
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
 .services {
   display: flex;
   flex-wrap: wrap;
   width: 1168px;
   margin: 0 auto;
+  margin-top: 65px;
 }
 .ser {
   flex-basis: calc((100% - 0px) / 3);
+  display: flex;
   align-items: flex-start;
   height: 74px;
-  margin-top: 65px;
   margin-bottom: 100px;
+}
+.ser:nth-child(4) {
+  margin-bottom: 0;
+}
+.ser:nth-child(5) {
+  margin-bottom: 0;
+}
+.ser:nth-child(6) {
+  margin-bottom: 0;
 }
 
 .title {
@@ -131,5 +150,43 @@
   color: #b6b6b6;
 }
 .colum {
-  display: inline-block;
+  margin-left: 10px;
+}
+.soc {
+  height: 470px;
+  width: 380px;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 139, 138, 0.8) 0%,
+    rgba(229, 207, 130, 0.8) 100%
+  );
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soc:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.sm {
+  width: 57px;
+  height: 57px;
+  margin-left: 1px;
+}
+.sm:first-child {
+  margin-left: 0px;
+}
+
+.soc-1 {
+  background-color: #95e1d3;
+}
+.soc-2 {
+  background-color: #fce38a;
+}
+.foto {
+  margin-top: 16px;
 }
